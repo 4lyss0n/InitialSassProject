@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+:root {
+  --LinearBackGroundColors: red, green, blue;
+  --Color: black;
+}
+
+.DarkMode:root {
+  --LinearBackGroundColors: black, rgb(48, 48, 48), black;
+  --Color: white;
+}
+
+@-webkit-keyframes BackGround {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes BackGround {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+body {
+  background-image: linear-gradient(45deg, var(--LinearBackGroundColors));
+  background-size: 400vw 400vh;
+  -webkit-animation: BackGround 60s linear infinite;
+  animation: BackGround 60s linear infinite;
+}
+
+body * {
+  color: var(--Color);
+}
+/*# sourceMappingURL=style.css.map */

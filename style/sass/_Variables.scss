@@ -1,0 +1,12 @@
+:root {
+    --LinearBackGroundColors: red, green, blue;
+    --Color: black;
+}
+
+.DarkMode:root {
+    --LinearBackGroundColors: black, rgb(48, 48, 48), black;
+    --Color: white;
+}
+
+$LinearBackGroundColors: var(--LinearBackGroundColors);
+$DefalColor: var(--Color);

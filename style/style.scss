@@ -1,0 +1,13 @@
+@import 'sass/SetDefaltStyles';
+@import 'sass/Variables';
+@import 'sass/Animations';
+
+body{
+    background-image: linear-gradient(45deg,$LinearBackGroundColors);
+    background-size: 400vw 400vh;
+    animation: BackGround 60s linear infinite;
+    
+    *{
+        color: $DefalColor;
+    }
+}
